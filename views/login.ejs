@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-zinc-900 flex items-center justify-center">
+      <div class="text-center">
+        <!-- <a class="text-blue-500 text-2xl mb-6 inline-block" href="/login"
+          >Login Page</a
+        > -->
+        <h1 class="text-3xl font-bold text-white mb-6">Login User</h1>
+        <form action="/login" method="post" class="space-y-4">
+          <input
+            class="text-white bg-transparent border-b-2 border-white outline-none p-2 w-1/2"
+            type="email"
+            placeholder="email"
+            name="email"
+            id=""
+          />
+          <input
+            class="text-white bg-transparent border-b-2 border-white outline-none p-2 w-1/2"
+            type="password"
+            placeholder="password"
+            name="password"
+            id=""
+          />
+          <button class="p-2 bg-blue-500 text-white rounded-lg w-1/2">
+            Login User
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

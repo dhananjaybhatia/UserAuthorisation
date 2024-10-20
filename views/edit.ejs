@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-zinc-900 p-10">
+      <div class="w-full flex justify-end">
+        <a class="bg-red-500 p-3 text-white text-sm rounded-md" href="/logout"
+          >Logout</a
+        >
+      </div>
+
+      <div class="w-full max-w-lg">
+        <a class="text-2xl text-blue-600 mb-6 inline-block" href="/profile">Back...</a>
+
+        <h5 class="text-3xl text-orange-600 mb-5">Edit your post</h5>
+        <form action="/update/<%= post._id%>" method="post">
+          <textarea
+            class="resize-none w-full p-3 mb-5 bg-zinc-900 text-white border-2 border-zinc-800 rounded-md focus:outline-none focus:ring-orange-600 focus:border-orange-600"
+            placeholder="Did you change your mind.."
+            rows="5"
+            name="content"
+          ><%= post.content %></textarea>
+          <button
+            type="submit"
+            class="p-3 text-white bg-yellow-600 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
+          >
+            Update !!
+          </button>
+        </form>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
